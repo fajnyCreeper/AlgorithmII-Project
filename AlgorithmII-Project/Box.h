@@ -10,15 +10,17 @@ public:
 	int width; //!< Width of the box.
 	int length; //!< Length of the box.
 
-	//! Class constructor
+	//! Class constructor.
 	/*!
 	 * Construct object by passing height, width, length represented by integer.
+	 * \param height,width,length Dimensions of box.
 	 */
-	Box(int, int, int);
+	Box(int height, int width, int length);
 
-	//! Transform the values to string format
+	//! Transform the values to string format.
 	/*!
-	 * Returns standardized output in format "width x length x height"
+	 * Returns standardized output in format width x length x height.
+	 * \return String representation of box.
 	 */
 	std::string ToString();
 };

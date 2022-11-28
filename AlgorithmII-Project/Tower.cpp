@@ -1,6 +1,5 @@
 #include "Tower.h"
 
-//Add box and all of rotations to vector
 void Tower::AddBox(int height, int width, int length)
 {
 	this->boxes.push_back(Box(
