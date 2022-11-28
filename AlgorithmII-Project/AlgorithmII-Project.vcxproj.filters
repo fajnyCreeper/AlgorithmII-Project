@@ -24,6 +24,9 @@
     <ClCompile Include="Box.cpp">
       <Filter>Zdrojové soubory</Filter>
     </ClCompile>
+    <ClCompile Include="File.cpp">
+      <Filter>Zdrojové soubory</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Box.h">
@@ -32,5 +35,12 @@
     <ClInclude Include="Tower.h">
       <Filter>Hlavičkové soubory</Filter>
     </ClInclude>
+    <ClInclude Include="File.h">
+      <Filter>Hlavičkové soubory</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="SetOfBlocks1.txt" />
+    <Text Include="SetOfBlocks2.txt" />
   </ItemGroup>
 </Project>
