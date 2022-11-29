@@ -1,0 +1,21 @@
+\label{index_md_README}%
+\Hypertarget{index_md_README}%
+This project is solution to the \char`\"{}\+Tower of Boxes\char`\"{} problem.\hypertarget{index_autotoc_md1}{}\doxysection{Task description}\label{index_autotoc_md1}
+We have a set of {\itshape n} types boxes. All boxes are blocks with dimensions {\itshape h x w x l}. For the purpose of this task, it is not important which dimension is which.
+
+Our goal is to build the highest tower possible but we have to follow these rules\+:
+\begin{DoxyEnumerate}
+\item We can build only upwards. One layer of the tower {\bfseries{must}} be made from one box only. That means we cannot place two boxes next to each other.
+\end{DoxyEnumerate}
+\begin{DoxyEnumerate}
+\item We can rotate the box by 90° in all three axes.
+\end{DoxyEnumerate}
+\begin{DoxyEnumerate}
+\item We can re-\/use the same box type, but all other rules must be followed.
+\end{DoxyEnumerate}
+\begin{DoxyEnumerate}
+\item We can place on top only boxes, that have sides of base shorter than the current box on the top. That means, we cannot place two identical boxes on top of each other.
+\end{DoxyEnumerate}\hypertarget{index_autotoc_md2}{}\doxysubsection{Notes}\label{index_autotoc_md2}
+The boxes are stored in {\itshape txt} file, on which the first line is the number of boxes we have. ~\newline
+ Then we have the boxes, which are stored in following format\+: {\ttfamily h w l}\hypertarget{index_autotoc_md3}{}\doxysection{Approach to the solution}\label{index_autotoc_md3}
+The following solution is inspired by 

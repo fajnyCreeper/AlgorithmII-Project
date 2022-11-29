@@ -1,0 +1,46 @@
+\hypertarget{class_tower}{}\doxysection{Tower Class Reference}
+\label{class_tower}\index{Tower@{Tower}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_tower_a2ca2a9b9f0e64c8d9413f8e81cd9de35}{Add\+Box}} (int height, int width, int length)
+\begin{DoxyCompactList}\small\item\em Adds \mbox{\hyperlink{class_box}{Box}} and all it\textquotesingle{}s rotations to boxes vector. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_tower_aedcaef0da3aede9876406818e2e1a97b}{Create\+Tower}} ()
+\begin{DoxyCompactList}\small\item\em Creates the highest tower possible. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_tower_ae42f1bbbf2ac2982a3f895360229a125}\label{class_tower_ae42f1bbbf2ac2982a3f895360229a125}} 
+void {\bfseries Print\+Tower} ()
+\begin{DoxyCompactList}\small\item\em Prints information about the tower. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_tower_a2ca2a9b9f0e64c8d9413f8e81cd9de35}\label{class_tower_a2ca2a9b9f0e64c8d9413f8e81cd9de35}} 
+\index{Tower@{Tower}!AddBox@{AddBox}}
+\index{AddBox@{AddBox}!Tower@{Tower}}
+\doxysubsubsection{\texorpdfstring{AddBox()}{AddBox()}}
+{\footnotesize\ttfamily void Tower\+::\+Add\+Box (\begin{DoxyParamCaption}\item[{int}]{height,  }\item[{int}]{width,  }\item[{int}]{length }\end{DoxyParamCaption})}
+
+
+
+Adds \mbox{\hyperlink{class_box}{Box}} and all it\textquotesingle{}s rotations to boxes vector. 
+
+Creates instance of \mbox{\hyperlink{class_box}{Box}} class and adds it to boxes vector. 
+\begin{DoxyParams}{Parameters}
+{\em height,width,length} & Dimensions of the box. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_tower_aedcaef0da3aede9876406818e2e1a97b}\label{class_tower_aedcaef0da3aede9876406818e2e1a97b}} 
+\index{Tower@{Tower}!CreateTower@{CreateTower}}
+\index{CreateTower@{CreateTower}!Tower@{Tower}}
+\doxysubsubsection{\texorpdfstring{CreateTower()}{CreateTower()}}
+{\footnotesize\ttfamily void Tower\+::\+Create\+Tower (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates the highest tower possible. 
+
+Sort boxes by area and call Recursive\+Search function to get hightest tower, then process the memoization vector and get the boxes used for the tower. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Algorithm\+II-\/\+Project/Tower.\+h\item 
+Algorithm\+II-\/\+Project/Tower.\+cpp\end{DoxyCompactItemize}

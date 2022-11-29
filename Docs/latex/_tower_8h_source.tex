@@ -1,0 +1,40 @@
+\hypertarget{_tower_8h_source}{}\doxysection{Tower.\+h}
+\label{_tower_8h_source}\index{AlgorithmII-\/Project/Tower.h@{AlgorithmII-\/Project/Tower.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include <algorithm>}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}Box.h"{}}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{keyword}{class }\mbox{\hyperlink{class_tower}{Tower}}}
+\DoxyCodeLine{8 \{}
+\DoxyCodeLine{9 \textcolor{keyword}{private}:}
+\DoxyCodeLine{10     std::vector<Box> boxes; }
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12     std::vector<int> memoization; }
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14     \textcolor{keywordtype}{int} maxHeight; }
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16     std::vector<Box> tower; }
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18     \textcolor{keywordtype}{int} RecursiveSearch(std::vector<Box>, \textcolor{keywordtype}{int}, \textcolor{keywordtype}{int}); }
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20 \textcolor{keyword}{public}:}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{26     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_tower_a2ca2a9b9f0e64c8d9413f8e81cd9de35}{AddBox}}(\textcolor{keywordtype}{int} height, \textcolor{keywordtype}{int} width, \textcolor{keywordtype}{int} length);}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{29 }
+\DoxyCodeLine{33     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_tower_aedcaef0da3aede9876406818e2e1a97b}{CreateTower}}();}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{36     \textcolor{comment}{/*}}
+\DoxyCodeLine{37 \textcolor{comment}{     * Prints formated information about the tower.}}
+\DoxyCodeLine{38 \textcolor{comment}{     * Firstly print the maximum height we got,}}
+\DoxyCodeLine{39 \textcolor{comment}{     * then print all of the boxes used.}}
+\DoxyCodeLine{40 \textcolor{comment}{     */}}
+\DoxyCodeLine{41     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_tower_ae42f1bbbf2ac2982a3f895360229a125}{PrintTower}}();}
+\DoxyCodeLine{42 \};}
+\DoxyCodeLine{43 }
+
+\end{DoxyCode}

@@ -1,0 +1,32 @@
+\hypertarget{_file_8h_source}{}\doxysection{File.\+h}
+\label{_file_8h_source}\index{AlgorithmII-\/Project/File.h@{AlgorithmII-\/Project/File.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include <fstream>}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <sstream>}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{keyword}{class }\mbox{\hyperlink{class_file}{File}}}
+\DoxyCodeLine{8 \{}
+\DoxyCodeLine{9 \textcolor{keyword}{private}:}
+\DoxyCodeLine{10     std::string filename;}
+\DoxyCodeLine{11     std::vector<std::vector<int>> lines;}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13 \textcolor{keyword}{public}:}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{19     \mbox{\hyperlink{class_file_abd2dacf27133c9d5595ecc414299f1a3}{File}}(std::string filename);}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{22 }
+\DoxyCodeLine{30     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_file_a6171fa2378422eb14442e9fcde762c36}{ProcessFile}}();}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{33     \textcolor{comment}{/*}}
+\DoxyCodeLine{34 \textcolor{comment}{     * Get the line vector and return it}}
+\DoxyCodeLine{35 \textcolor{comment}{     * \(\backslash\)return Vector of all lines}}
+\DoxyCodeLine{36 \textcolor{comment}{     */}}
+\DoxyCodeLine{37     std::vector<std::vector<int>> \mbox{\hyperlink{class_file_a544cdabd4e07d014a2616bc603b76576}{GetLines}}();}
+\DoxyCodeLine{38 \};}
+\DoxyCodeLine{39 }
+
+\end{DoxyCode}
