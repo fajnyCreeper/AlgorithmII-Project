@@ -18,4 +18,14 @@ Our goal is to build the highest tower possible but we have to follow these rule
 \end{DoxyEnumerate}\hypertarget{index_autotoc_md2}{}\doxysubsection{Notes}\label{index_autotoc_md2}
 The boxes are stored in {\itshape txt} file, on which the first line is the number of boxes we have. ~\newline
  Then we have the boxes, which are stored in following format\+: {\ttfamily h w l}\hypertarget{index_autotoc_md3}{}\doxysection{Approach to the solution}\label{index_autotoc_md3}
-The following solution is inspired by 
+The solution is derived from following source\+: \href{https://www.geeksforgeeks.org/box-stacking-problem-dp-22/}{\texttt{ https\+://www.\+geeksforgeeks.\+org/box-\/stacking-\/problem-\/dp-\/22/}}
+
+First, we need to load the boxes from the file, which is handled by {\ttfamily \mbox{\hyperlink{class_file}{File}}} class. ~\newline
+ We then pass all the loaded boxes into {\ttfamily \mbox{\hyperlink{class_tower}{Tower}}} class, using {\ttfamily \mbox{\hyperlink{class_tower_a2ca2a9b9f0e64c8d9413f8e81cd9de35}{Tower\+::\+Add\+Box()}}} method, which not only saved passed box, but all possible rotations.
+
+When we added all the boxes, we wanted, we call {\ttfamily \mbox{\hyperlink{class_tower_aedcaef0da3aede9876406818e2e1a97b}{Tower\+::\+Create\+Tower()}}} method. First thing, we do, is sort all boxes by it\textquotesingle{}s area in ascending order. Then we call {\ttfamily Tower\+::\+Recursive\+Search()} method, which uses memoization to build the highest tower possible.
+
+When the highest tower was created, we store it\textquotesingle{}s size into {\ttfamily Tower\+::max\+Height} variable and then we go though the {\ttfamily Tower\+::memoization} vector to search for the blocks we used to build the tower. We save these blocks into {\ttfamily Tower\+::tower} vector.
+
+After we have built the tower, we can call {\ttfamily \mbox{\hyperlink{class_tower_ae42f1bbbf2ac2982a3f895360229a125}{Tower\+::\+Print\+Tower()}}} function which will print the result of our calculations in formated order. ~\newline
+ Frist, we print the height of the tower, followed by all blocks we used in descending order (starting from base and going to the top). 

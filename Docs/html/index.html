@@ -87,7 +87,13 @@ Notes</h2>
  Then we have the boxes, which are stored in following format: <code>h w l</code></p>
 <h1><a class="anchor" id="autotoc_md3"></a>
 Approach to the solution</h1>
-<p >The following solution is inspired by </p>
+<p >The solution is derived from following source: <a href="https://www.geeksforgeeks.org/box-stacking-problem-dp-22/">https://www.geeksforgeeks.org/box-stacking-problem-dp-22/</a></p>
+<p >First, we need to load the boxes from the file, which is handled by <code><a class="el" href="class_file.html">File</a></code> class. <br  />
+ We then pass all the loaded boxes into <code><a class="el" href="class_tower.html">Tower</a></code> class, using <code><a class="el" href="class_tower.html#a2ca2a9b9f0e64c8d9413f8e81cd9de35" title="Adds Box and all it&#39;s rotations to boxes vector.">Tower::AddBox()</a></code> method, which not only saved passed box, but all possible rotations.</p>
+<p >When we added all the boxes, we wanted, we call <code><a class="el" href="class_tower.html#aedcaef0da3aede9876406818e2e1a97b" title="Creates the highest tower possible.">Tower::CreateTower()</a></code> method. First thing, we do, is sort all boxes by it's area in ascending order. Then we call <code>Tower::RecursiveSearch()</code> method, which uses memoization to build the highest tower possible.</p>
+<p >When the highest tower was created, we store it's size into <code>Tower::maxHeight</code> variable and then we go though the <code>Tower::memoization</code> vector to search for the blocks we used to build the tower. We save these blocks into <code>Tower::tower</code> vector.</p>
+<p >After we have built the tower, we can call <code><a class="el" href="class_tower.html#ae42f1bbbf2ac2982a3f895360229a125" title="Prints information about the tower.">Tower::PrintTower()</a></code> function which will print the result of our calculations in formated order. <br  />
+ Frist, we print the height of the tower, followed by all blocks we used in descending order (starting from base and going to the top). </p>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->
 <!-- start footer part -->
